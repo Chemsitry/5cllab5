@@ -1,0 +1,194 @@
+{
+  "helium": {
+    "D3_offsets_cm": [
+      11.11,
+      11.18,
+      11.3,
+      11.3
+    ],
+    "sample_count": 4,
+    "mean_offset_cm": 11.2225,
+    "sample_sd_cm": 0.09394147114028034,
+    "mean_standard_error_cm": 0.04697073557014017,
+    "distance_cm": 36.58,
+    "reference_D3_nm": 587.6,
+    "spacing_nm": 2003.4051171456226,
+    "spacing_u_nm": 7.663739196893817,
+    "other_lines_nm": [
+      664.9085491900521,
+      587.6,
+      504.0848265979481,
+      451.4199217655512
+    ],
+    "other_lines_u_nm": [
+      5.012084609674568,
+      0.0,
+      5.047083813757809,
+      5.061816950620369
+    ]
+  },
+  "hydrogen": {
+    "distance_cm": 27.85,
+    "colors": [
+      "Red",
+      "Cyan",
+      "Blue/violet"
+    ],
+    "offsets_cm": [
+      9.78,
+      6.97,
+      6.24
+    ],
+    "offset_u_cm": 0.09394147114028034,
+    "wavelength_nm": [
+      663.7904944595255,
+      486.38968476738626,
+      438.0178427095479
+    ],
+    "wavelength_u_nm": [
+      6.218145671125499,
+      6.443619060769743,
+      6.498741138569928
+    ],
+    "wavelength_covariance_nm2": [
+      [
+        38.665335587336784,
+        4.724537074634439,
+        4.254678094627668
+      ],
+      [
+        4.724537074634439,
+        41.52022660031515,
+        3.117597426455522
+      ],
+      [
+        4.254678094627668,
+        3.117597426455522,
+        42.23363638614116
+      ]
+    ],
+    "initial_levels": [
+      3.0,
+      4.0,
+      5.0
+    ],
+    "reference_wavelength_nm": [
+      656.1122763985122,
+      486.00909362852764,
+      433.93669073975684
+    ],
+    "wavelength_difference_nm": [
+      7.67821806101324,
+      0.3805911388586196,
+      4.081151969791051
+    ],
+    "individual_reference_deviation": [
+      1.2348083282557554,
+      0.05906481051552959,
+      0.6279911574827127
+    ],
+    "spacing_error_component_nm": [
+      2.539235418427467,
+      1.8606140416709829,
+      1.6755744913413992
+    ],
+    "position_error_component_nm": [
+      5.676056648514026,
+      6.169144348145204,
+      6.2790195500656925
+    ],
+    "inverse_initial_level_squared": [
+      0.1111111111111111,
+      0.0625,
+      0.04
+    ],
+    "wavenumber_per_m": [
+      1506499.4276759336,
+      2055964.6540987925,
+      2283012.020273123
+    ],
+    "wavenumber_u_per_m": [
+      14112.333594628382,
+      27237.117579406684,
+      33872.373883720735
+    ],
+    "wavenumber_covariance": [
+      [
+        199157959.48607686,
+        45324027.19863464,
+        50329318.01399377
+      ],
+      [
+        45324027.19863464,
+        741860574.0344245,
+        68685919.82228597
+      ],
+      [
+        50329318.01399377,
+        68685919.82228597,
+        1147337712.5185664
+      ]
+    ]
+  },
+  "fit": {
+    "model": "1/lambda = slope/ni^2 + intercept, with both parameters free",
+    "slope_per_m": -11068530.769076042,
+    "intercept_per_m": 2737147.5997498464,
+    "parameter_covariance": [
+      [
+        170107724933.80743,
+        -16392157802.828796
+      ],
+      [
+        -16392157802.828796,
+        1739497282.6938767
+      ]
+    ],
+    "R_per_m": 11068530.769076042,
+    "R_u_per_m": 412441.1775439104,
+    "final_level": 2.0109250296142207,
+    "final_level_u": 0.02333343272587087,
+    "chi_squared": 0.29042363325307624,
+    "degrees_of_freedom": 1,
+    "reduced_chi_squared": 0.29042363325307624,
+    "conditional_p_value": 0.5899491839753859,
+    "slope_u_per_m": 412441.1775439104,
+    "intercept_u_per_m": 41707.28093143782,
+    "raw_residual_per_m": [
+      -811.4199543527793,
+      10600.2274161987,
+      -11394.348713681567
+    ],
+    "input_uncertainties_rescaled": false
+  },
+  "agreement": {
+    "reference_R_per_m": 10973731.568508,
+    "R_deviation_in_u": 0.22984902024713558,
+    "nf_deviation_in_u": 0.4682135604551495,
+    "fixed_Balmer_chi_squared": 1.7896393013517473,
+    "fixed_Balmer_degrees_of_freedom": 3,
+    "fixed_Balmer_conditional_p_value": 0.6171921312747329,
+    "p_value_assumption": "Gaussian reading errors with estimated scales held fixed"
+  },
+  "assumptions": {
+    "bench_separations_held_fixed": true,
+    "reason": "Bench position uncertainties were not recorded",
+    "hydrogen_line_u_source": "Sample SD of the four helium D3 placements",
+    "hydrogen_mirror_trace_recorded": false
+  },
+  "experiment3": {
+    "mode": "Qualitative modified lab after flooding",
+    "quantitative_analysis": false,
+    "B_observation": "Prominent red, orange, and yellow features",
+    "B_candidate": "Neon",
+    "C_observation": "Many lines, including blue, two green regions, and yellow to red",
+    "C_candidate": "Argon",
+    "identification_limit": "Qualitative candidates, without wavelength validation"
+  },
+  "sources": {
+    "handout": "LabON05-AtomicSpectra-v25.1.0.pdf",
+    "hydrogen_reference": "Handout Rydberg constant and Balmer formula, evaluated before rounding",
+    "neon": "https://physics.nist.gov/PhysRefData/Handbook/Tables/neontable2.htm",
+    "argon": "https://physics.nist.gov/PhysRefData/Handbook/Tables/argontable2.htm"
+  }
+}
